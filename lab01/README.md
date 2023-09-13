@@ -105,6 +105,81 @@ Remember that Java is platform-independent, this is achieved using JVM. *Recomme
 - Execute: `java HelloWorld`
 
 ----
+
+## If-Else
+
+```java
+if (count > 2) {
+    System.out.println("Count is higher than 2");
+} else {
+    System.out.println("Count is lower or equal than 2");
+}
+```
+
+----
+
+## Switch Expression
+
+For switch we have two syntaxes
+
+### Classic Syntax
+
+```java
+public String exampleOfSwitch(String animal) {
+    String result;
+    switch (animal) {
+        case "DOG":
+            result = "domestic animal"; 
+            break;
+        case "CAT":
+            result = "domestic animal";
+            break;
+        case "TIGER":
+            result = "wild animal";
+            break;
+        default:
+            result = "unknown animal";
+            break;
+    }
+    return result;
+}
+```
+
+### New Syntax
+
+This new syntax was introduced in Java 12
+
+```java
+switch (day) {
+        case MONDAY, FRIDAY, SUNDAY -> numLetters = 6;
+        case TUESDAY -> numLetters = 7;
+        case THURSDAY, SATURDAY -> numLetters = 8;
+        case WEDNESDAY -> numLetters = 9;
+        default -> numLetters = 0;
+    };
+```
+
+----
+
+## Loops
+
+An example of both `for` and `while` loops:
+
+```java
+for (int i = 1; i <= 50; i++) {
+    methodToRepeat();
+}
+
+int whileCounter = 1;
+while (whileCounter <= 50) {
+    methodToRepeat();
+    whileCounter++;
+}
+```
+
+Note that: we can use `break` to exit early from a loop, or `continue` to simply skip the current iteration we are in.
+
+----
 #### Footnotes
 
 1. [Keywords](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html) are reserved words that have special meaning in Java.
