@@ -1,0 +1,8 @@
+Orange Juice;1 glass;2
+Coca-Cola;12 oz can;1
+Water;500 ml bottle;1
+Coffee;1 cup;3
+Red Wine;1 glass;8;12.5
+Beer;12 oz bottle;5;5.0
+Whiskey;1 shot;10;40.0
+Vodka;1 shot;7;40.0
