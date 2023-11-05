@@ -67,7 +67,7 @@ It doesn’t matter how many times we instantiate a class. There will always be 
 
 From the memory perspective, **static variables are stored in the heap memory**.
 
-Example of a `static` field: 
+Example of a `static` field:
 
 ```java
 public class Car {

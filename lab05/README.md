@@ -17,7 +17,7 @@ An XML document that contains a declarative description of the project.
 
 When executing a lifecycle phase or a plugin goal, Maven looks for the POM in the current directory by default.
 
-A typical POM sturcture:
+A typical POM structure:
 
 ```xml
 <project>

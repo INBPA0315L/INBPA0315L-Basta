@@ -151,7 +151,7 @@ public class LegoSet implements Comparable<LegoSet>{
 }
 ```
 
-and as it's a [static class](https://github.com/INBPA0315-2023/INBPA0315L-Basta/tree/main/lab03#static-keyword), it's easier to call it in the `sort()` method: `Collections.sort(legoSets, new LegoSet.LegoSetComparator());`
+and as it's a [static class](../lab03/README.md#static-keyword), it's easier to call it in the `sort()` method: `Collections.sort(legoSets, new LegoSet.LegoSetComparator());`
 
 ----
 

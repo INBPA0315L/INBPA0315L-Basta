@@ -8,7 +8,6 @@ Simply put, a class represent a definition or a type of object. In Java, classes
 
 Class `Object` is the root of the class hierarchy. Every class has `Object` as a superclass. All objects, including arrays, implement the methods of this class. [^1]
 
-
 [^1]: [Java Docs](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Object.html)
 
 ----
@@ -210,8 +209,7 @@ We can override this behavior easily.
 
 `hashCode()` returns an integer representing the current instance of the class. We should calculate this value consistent with the definition of equality for the class. Thus, if we override the `equals()` method, we also have to override `hashCode()`.
 
-Recommended further reading: 
+Recommended further reading:
 
 - [Baeldung &mdash; Java equals() and hashCode() Contracts](https://www.baeldung.com/java-equals-hashcode-contracts)
 - [Baeldung &mdash; Guide to hashCode() in Java](https://www.baeldung.com/java-hashcode)
-- 

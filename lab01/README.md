@@ -1,6 +1,7 @@
 # Lab 01 Overview
 
 Java is:
+
 - Statically-typed
 - Object-oriented
 - Platform-independent
@@ -13,7 +14,7 @@ Mainly there are two broad categories of data types in Java: [Primitive](#primit
 
 #### Primitive Types
 
-Basic data types that store simple data and form the foundation of data manipulation. 
+Basic data types that store simple data and form the foundation of data manipulation.
 
 This includes:
 
@@ -62,12 +63,14 @@ int secondElement = numbers[2];
 It's important to note how to name an identifier, it has to conform to the following rules:
 
 - Starts with a letter, an underscore (`_`), or a dollar sign (`$`).
-- Cannot be a reserved keyword (Footnote 1).
+- Cannot be a reserved keyword [^1].
 - Cannot be `true`, `false`, `null`
 
 Preferably, every programming language has coding conventions, which are a set of rules that help us write a more readable code. *Recommended reading: [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)*
 
-----
+[^1]: [Keywords](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html) are reserved words that have special meaning in Java.
+
+-----
 
 ## Operators
 
@@ -75,7 +78,7 @@ Preferably, every programming language has coding conventions, which are a set o
 - Logical &mdash; `&&`, `||`, `!`
 - Comparison &mdash; `<`, `>`, `<=`, `>=`, `==`, `!=`
 
-----
+-----
 
 ## Java Program Structure
 
@@ -104,7 +107,7 @@ Remember that Java is platform-independent, this is achieved using JVM. *Recomme
 - Compile: `javac HelloWorld.java`
 - Execute: `java HelloWorld`
 
-----
+-----
 
 ## If-Else
 
@@ -116,7 +119,7 @@ if (count > 2) {
 }
 ```
 
-----
+-----
 
 ## Switch Expression
 
@@ -159,7 +162,7 @@ switch (day) {
     };
 ```
 
-----
+-----
 
 ## Loops
 
@@ -178,8 +181,3 @@ while (whileCounter <= 50) {
 ```
 
 Note that: we can use `break` to exit early from a loop, or `continue` to simply skip the current iteration we are in.
-
-----
-#### Footnotes
-
-1. [Keywords](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html) are reserved words that have special meaning in Java.
