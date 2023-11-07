@@ -262,20 +262,20 @@ Now let's explore what we can do with lombok.
 
 And many other possibilities.
 
-[^1] : [Java Docs &mdash; Scanner](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html)
+[^1]: [Java Docs &mdash; Scanner](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html)
 
-[^2] : [Oracle Java Tutorials &mdash; Specifying the Exceptions Thrown by a Method](https://docs.oracle.com/javase/tutorial/essential/exceptions/declaring.html)
+[^2]: [Oracle Java Tutorials &mdash; Specifying the Exceptions Thrown by a Method](https://docs.oracle.com/javase/tutorial/essential/exceptions/declaring.html)
 
-[^3] : [Oracle Java Tutorials &mdash; How to Throw Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/throwing.html)
+[^3]: [Oracle Java Tutorials &mdash; How to Throw Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/throwing.html)
 
-[^4] : [Baeldung &mdash; Exception Handling in Java](https://www.baeldung.com/java-exceptions)
+[^4]: [Baeldung &mdash; Exception Handling in Java](https://www.baeldung.com/java-exceptions)
 
-[^5] : [Oracle Java Tutorials &mdash; Catching and Handling Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/handling.html)
+[^5]: [Oracle Java Tutorials &mdash; Catching and Handling Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/handling.html)
 
-[^6] : [Baeldung &mdash; Java Try with Resources](https://www.baeldung.com/java-try-with-resources)
+[^6]: [Baeldung &mdash; Java Try with Resources](https://www.baeldung.com/java-try-with-resources)
 
-[^7] : [Java Documentation &mdash; BufferedReader](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html)
+[^7]: [Java Documentation &mdash; BufferedReader](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html)
 
-[^8] : [Java Documentation &mdash; BufferedWriter](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedWriter.html)
+[^8]: [Java Documentation &mdash; BufferedWriter](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedWriter.html)
 
-[^9] : [Project Lombok](https://projectlombok.org/)
+[^9]: [Project Lombok](https://projectlombok.org/)
