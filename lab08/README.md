@@ -30,19 +30,19 @@ Mainly there are three main categories of exceptional conditions:
 
 ### Hierarchy
 
-The objects that inherit from the Throwable class include direct descendants (objects that inherit directly from the Throwable class) and indirect descendants (objects that inherit from children or grandchildren of the Throwable class). The figure below illustrates the class hierarchy of the Throwable class and its most significant subclasses. As you can see, Throwable has two direct descendants: Error and Exception. [^5]
+The objects that inherit from the Throwable class include direct descendants (objects that inherit directly from the Throwable class) and indirect descendants (objects that inherit from children or grandchildren of the Throwable class). The figure below illustrates the class hierarchy of the Throwable class and its most significant subclasses. As you can see, Throwable has two direct descendants: Error and Exception. [^3]
 
 ![The Throwable class](https://docs.oracle.com/javase/tutorial/figures/essential/exceptions-throwable.gif)
 
-[^5] : [Oracle Java Tutorials &mdash; How to Throw Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/throwing.html)
+[^3] : [Oracle Java Tutorials &mdash; How to Throw Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/throwing.html)
 
 ### Checked Exceptions
 
 Checked exceptions are exceptions that the Java compiler requires us to handle. We have to either declaratively throw the exception up the call stack, or we have to handle it ourselves.
 
-There are multiple ways we can handle exceptions[^3].
+There are multiple ways we can handle exceptions[^4].
 
-#### try-catch[^4]
+#### try-catch[^5]
 
 Consider the following code snippet:
 
@@ -104,7 +104,8 @@ public static void main(String[] args) {
 }
 ```
 
-The ways of usage of the try-catch blocks varies[^3].
+> **Note**
+> The ways of usage of the try-catch blocks varies.
 
 Notice what happens if we executed the following code snippet:
 
@@ -121,8 +122,8 @@ public static void main(String[] args) {
 
 The line in question will indeed throw an exception, this will be an unchecked exception. Notice that the exception we are catching here is pretty specific.
 
-[^3] : [Baeldung &mdash; Exception Handling in Java](https://www.baeldung.com/java-exceptions)
-[^4] : [Oracle Java Tutorials &mdash; Catching and Handling Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/handling.html)
+[^4] : [Baeldung &mdash; Exception Handling in Java](https://www.baeldung.com/java-exceptions)
+[^5] : [Oracle Java Tutorials &mdash; Catching and Handling Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/handling.html)
 
 #### try-with-resources
 
@@ -173,7 +174,7 @@ BufferedReader br = new BufferedReader(new FileReader("input.txt"));
 
 ### `BufferedWriter`
 
-Writes text to a character-output stream, buffering characters so as to provide for the efficient writing of single characters, arrays, and strings.[^8]
+Writes text to a character-output stream, buffering characters so as to provide for the efficient writing of single characters, arrays, and strings[^8].
 
 It's one of many way to write to a file. A list of ways can be found [here](https://www.baeldung.com/java-write-to-file).
 
