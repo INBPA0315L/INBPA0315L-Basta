@@ -4,8 +4,6 @@
 
 Recall discussing [`Scanner`](../lab04/README.md#scanner) before. However, we only used the standard input. The `Scanner` class has multiple constructors[^1].
 
-[^1] : [Java Docs &mdash; Scanner](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html)
-
 We can easily use a specific [one](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html#Scanner-java.io.File-) that uses the class [`File`](https://docs.oracle.com/javase/8/docs/api/java/io/File.html) as its argument.
 
 ```java
@@ -15,8 +13,6 @@ We can easily use a specific [one](https://docs.oracle.com/javase/8/docs/api/jav
 Taking a look at the documentation, we will find the `throws` clause[^2]. This will lead us to our next topic.
 
 *Recommended Reading: [Baeldung &mdash; Difference Between Throw and Throws in Java](https://www.baeldung.com/java-throw-throws)*
-
-[^2] : [Oracle Java Tutorials &mdash; Specifying the Exceptions Thrown by a Method](https://docs.oracle.com/javase/tutorial/essential/exceptions/declaring.html)
 
 ----
 
@@ -33,8 +29,6 @@ Mainly there are three main categories of exceptional conditions:
 The objects that inherit from the Throwable class include direct descendants (objects that inherit directly from the Throwable class) and indirect descendants (objects that inherit from children or grandchildren of the Throwable class). The figure below illustrates the class hierarchy of the Throwable class and its most significant subclasses. As you can see, Throwable has two direct descendants: Error and Exception. [^3]
 
 ![The Throwable class](https://docs.oracle.com/javase/tutorial/figures/essential/exceptions-throwable.gif)
-
-[^3] : [Oracle Java Tutorials &mdash; How to Throw Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/throwing.html)
 
 ### Checked Exceptions
 
@@ -122,9 +116,6 @@ public static void main(String[] args) {
 
 The line in question will indeed throw an exception, this will be an unchecked exception. Notice that the exception we are catching here is pretty specific.
 
-[^4] : [Baeldung &mdash; Exception Handling in Java](https://www.baeldung.com/java-exceptions)
-[^5] : [Oracle Java Tutorials &mdash; Catching and Handling Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/handling.html)
-
 #### try-with-resources
 
 The tradition try-catch-finally block is verbose, we can use try-with-resources[^6]. Simply put, to be auto-closed, a resource has to be both declared and initialized inside the try. Let's see how to use it:
@@ -153,8 +144,6 @@ try (Scanner sc = new Scanner(new File("input.txt"))) {
     System.out.println("File not found");
 }
 ```
-
-[^6] : [Baeldung &mdash; Java Try with Resources](https://www.baeldung.com/java-try-with-resources)
 
 ----
 
@@ -229,9 +218,6 @@ We can use both of them in the try-with-resources. Here are two ways:
     }
   ```
 
-[^7] : [Java Documentation &mdash; BufferedReader](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html)
-[^8] : [Java Documentation &mdash; BufferedWriter](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedWriter.html)
-
 ----
 
 ## Project Lombok
@@ -275,5 +261,21 @@ Now let's explore what we can do with lombok.
 - `@EqualsAndHashCode` &mdash; Generates `equals()` and `hashCode()`, provides options to include or exclude fields.
 
 And many other possibilities.
+
+[^1] : [Java Docs &mdash; Scanner](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html)
+
+[^2] : [Oracle Java Tutorials &mdash; Specifying the Exceptions Thrown by a Method](https://docs.oracle.com/javase/tutorial/essential/exceptions/declaring.html)
+
+[^3] : [Oracle Java Tutorials &mdash; How to Throw Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/throwing.html)
+
+[^4] : [Baeldung &mdash; Exception Handling in Java](https://www.baeldung.com/java-exceptions)
+
+[^5] : [Oracle Java Tutorials &mdash; Catching and Handling Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/handling.html)
+
+[^6] : [Baeldung &mdash; Java Try with Resources](https://www.baeldung.com/java-try-with-resources)
+
+[^7] : [Java Documentation &mdash; BufferedReader](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html)
+
+[^8] : [Java Documentation &mdash; BufferedWriter](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedWriter.html)
 
 [^9] : [Project Lombok](https://projectlombok.org/)
